@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<style>
+    * {
+        font-family: 'gilroy';
+    }
+</style>
+
+<body class="dark:bg-gray-400">
+    <div class="main w-full px-10 md:px-6 lg:px-8">
+        <!-- Navbar -->
+        <div class="nav flex items-center justify-between h-[80px]">
+            <h1 class="font-semibold text-xl md:text-xl">Ilya Miskov</h1>
+            <div class="hidden md:flex items-center gap-3 lg:gap-5">
+                <div class="line w-[40px] h-[2px] bg-black"></div>
+                <h1 class="font-medium text-base md:text-base">Visual & product designer <br> based in Estonia</h1>
+            </div>
+            <div class="hidden md:flex gap-4 lg:gap-6 font-medium capitalize">
+                <a href="#" class="text-base">work</a>
+                <a href="#" class="text-base">about</a>
+                <a href="#" class="text-base flex items-center">let's chat <i class="ri-arrow-right-up-line ml-1"></i></a>
+            </div>
+            <i class="ri-menu-3-line text-2xl md:hidden"></i>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="center mt-6 md:mt-10">
+            <h1 class="font-semibold text-3xl md:text-4xl">Hello! I'm Ilya</h1>
+            <h1 class="font-bold text-3xl md:text-4xl lg:text-6xl mt-4 max-w-[700px] leading-tight">
+                A multidisciplinary designer focusing on digital experiences.
+            </h1>
+        </div>
+
+        <!-- Case Studies Section -->
+        <div class="flex items-center justify-between mt-6 md:mt-10">
+            <h1 class="font-semibold text-xl md:text-2xl">Case studies</h1>
+            <div class="flex items-center gap-3">
+                <div class="line h-[1px] w-[75px] bg-black"></div>
+                <h1 class="font-semibold text-sm md:text-base">01</h1>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="flex flex-col justify-center lg:gap-10  items-center md:flex-row gap-6  md:p-0 mt-6 md:mt-10">
+            <!-- Project 1 -->
+            <div class="box1 p-5 md:p-0 w-[100vw] md:w-[600px] lg:w-[45vw]">
+                <img class="w-full rounded-xl h-[400px] object-cover"
+                    src="https://images.unsplash.com/photo-1560200353-ce0a76b1d438?w=500&auto=format&fit=crop&q=60"
+                    alt="">
+                <div class="flex justify-between items-center mt-4">
+                    <div>
+                        <h1 class="font-semibold text-2xl">Sketch</h1>
+                        <h1 class="text-xl text-gray-600">Content Design, Marketing</h1>
+                    </div>
+                    <button class="rounded-lg border-2 border-black px-3 py-2 hover:bg-black hover:text-white">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="box2 p-5 md:p-0 w-[100vw] md:w-[600px] lg:w-[45vw]">
+                <img class="w-full rounded-xl h-[400px] object-cover"
+                    src="https://images.unsplash.com/photo-1573663520878-8c38b10264fc?w=500&auto=format&fit=crop&q=60"
+                    alt="">
+                <div class="flex justify-between items-center mt-4">
+                    <div>
+                        <h1 class="font-semibold text-2xl">Frame.io</h1>
+                        <h1 class="text-xl text-gray-600">User Interface Design</h1>
+                    </div>
+                    <button class="rounded-lg border-2 border-black px-3 py-2 hover:bg-black hover:text-white">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
