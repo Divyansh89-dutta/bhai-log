@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        @media (min-width: 640px) {
+            #svg{
+                position: absolute;
+               top:20vh;
+               left:20px,
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div id="main" class="bg-[#FDF9EC] font-[gilroy] w-screen">
+      <nav class="h-[70px] hidden md:flex fixed bg-[#FDF9EC] w-full justify-center items-center">
+        <div class="flex gap-5">
+          <a
+            class="text-[16px] flex items-center font-semibold justify-center bg-[#FAEBC5] duration-300 hover:bg-[#FEADD2] w-23 h-10 rounded-2xl"
+            href="#"
+            >Work</a
+          >
+          <a
+            class="text-[16px] flex items-center font-semibold justify-center bg-[#FAEBC5] duration-300 hover:bg-[#D8D800] w-23 h-10 rounded-2xl"
+            href="#"
+            >Services</a
+          >
+          <a
+            class="text-[16px] flex items-center font-semibold justify-center bg-[#FAEBC5] duration-300 hover:bg-[#FFDF2B] w-33 h-10 rounded-2xl"
+            href="#"
+            >Meet Christine</a
+          >
+          <a
+            class="text-[16px] flex items-center font-semibold justify-center bg-[#FAEBC5] duration-300 hover:bg-[#EDBBF9] w-23 h-10 rounded-2xl"
+            href="#"
+            >FAQ</a
+          >
+          <a
+            class="text-[16px] flex items-center font-semibold justify-center bg-[#FAEBC5] duration-300 hover:bg-[#FFBE80] w-33 h-10 rounded-2xl"
+            href="#"
+            >Get in Touch</a
+          >
+        </div>
+      </nav>
+      <nav id="nav-on-responsive" class="flex w-full justify-between px-3 py-4">
+        <h1 class="text-2xl font-semibold text-[#121A3C]"> Design Gal Studio</h1>
+        <i class="ri-menu-line text-2xl font-semibold"></i>
+      </nav>
+      <div class="h-[57vh] flex hidden md:flex items-center justify-center">
+        <h1 class="text-[11.5vw] text-[#11193B] font-bold">
+          Design Gal Studio
+        </h1>
+      </div>
+      <div class="p-8">
+        <div class="md:h-[53vh] overflow-hidden relative  flex bg-[#F889E7] rounded-2xl w-full">
+          <div id="text" class="p-10 flex lg:w-[70%] flex-col gap-8 items-start">
+            <h1 class="text-2xl md:text-5xl lg:text-6xl text-[#121A3C] font-bold">Here to make you look good and win business.</h1>
+            <p class="text-[15px] lg:text-[12px] text-[#121A3C] font-semibold">
+              Websites that convert and apps that feel effortless. Clean, clear,
+              and thoughtfully designed.
+            </p>
+
+            <button class="bg-[#10183A] text-white text-xl rounded-2xl px-2 py-1 md:p-3">Get in Touch <i class="ri-arrow-right-line rotate-90 "></i>  </button>
+          </div>
+          <div id="svg" class="w-[30%] absolute md:-right-[12vw] -right-[3vw] -bottom-[15vw] lg:-right-[10vw]  md:-bottom-[15vh]">
+            <svg width="300" height="300" viewBox="0 0 500 500" fill="none" id="svg-1112229207_3318">
+                <path d="M495.318 236.223C499.379 228.579 500.868 219.668 499.511 211.131C498.15 202.586 493.959 194.556 487.709 188.522C480.684 181.739 471.427 177.703 461.638 177.154L437.394 175.755L454.027 158.137C460.749 151.024 464.646 141.742 464.998 132.001C465.309 123.368 462.749 114.702 457.79 107.599C452.835 100.504 445.564 95.0813 437.316 92.3313C428.03 89.2356 417.935 89.5687 408.875 93.2686L386.356 102.467L393.641 79.4188L393.673 79.3221C396.584 70.027 396.008 60.0025 392.053 51.0976C388.555 43.2203 382.472 36.5421 374.927 32.2903C367.379 28.0368 358.475 26.2764 349.864 27.3295C340.127 28.5205 331.153 33.1625 324.577 40.4212L308.312 58.4007L304.786 34.4565C303.356 24.8126 298.454 16.014 290.988 9.67984C284.373 4.06729 275.946 0.660736 267.257 0.0866089C258.577 -0.484314 249.771 1.7804 242.465 6.46835C234.233 11.751 228.206 19.8043 225.488 29.1485L218.718 52.2823L205.104 32.2807C199.603 24.1909 191.34 18.3548 181.833 15.8506C173.431 13.6367 164.359 14.1806 156.287 17.3826C148.21 20.5877 141.259 26.4049 136.716 33.7603C131.586 42.0642 129.661 51.9239 131.292 61.5266L135.32 85.3232L114.307 73.164C105.818 68.2444 95.8264 66.5412 86.169 68.3681C77.6359 69.9842 69.7023 74.3708 63.8285 80.7193C57.9548 87.0709 54.2298 95.2906 53.3418 103.864C52.338 113.56 54.9069 123.285 60.5824 131.254L74.6356 150.982L50.3192 149.063C40.527 148.303 30.7888 151.077 22.9011 156.881C15.9284 162.013 10.708 169.383 8.2009 177.63C5.69378 185.878 5.93961 194.883 8.8955 202.985C12.2336 212.142 18.8003 219.791 27.3921 224.525L48.6843 236.251L25.9696 244.974C16.8323 248.484 9.27924 255.148 4.70268 263.738C0.635151 271.375 -0.864978 280.28 0.48135 288.812C1.82768 297.35 5.99827 305.378 12.2288 311.419C19.23 318.208 28.4704 322.263 38.2927 322.841L62.6059 324.244L45.9599 341.875C39.2679 348.964 35.3781 358.205 35.007 367.909C34.6755 376.516 37.2033 385.169 42.1192 392.27C47.0351 399.371 54.2694 404.817 62.4869 407.603C71.7828 410.754 81.9096 410.461 91.0056 406.78L113.644 397.533L106.359 420.579C103.424 429.861 103.971 439.884 107.901 448.797C111.385 456.705 117.468 463.411 125.029 467.684C132.588 471.956 141.508 473.729 150.143 472.67C159.876 471.477 168.848 466.835 175.423 459.578L191.688 441.6L195.212 465.529C196.636 475.152 201.517 483.941 208.959 490.275C215.567 495.9 223.992 499.321 232.681 499.908C233.585 499.97 234.489 500 235.393 500C243.179 500 250.932 497.756 257.483 493.564C265.73 488.29 271.775 480.233 274.493 470.916L281.282 447.717L294.91 467.738L294.981 467.844C300.495 475.889 308.756 481.687 318.237 484.168C326.645 486.367 335.717 485.808 343.784 482.588C351.856 479.369 358.796 473.539 363.327 466.172C368.424 457.884 370.335 448.049 368.708 438.473L364.68 414.676L385.715 426.85C394.18 431.749 404.137 433.45 413.768 431.642C422.32 430.039 430.272 425.651 436.16 419.291C442.044 412.937 445.772 404.71 446.66 396.127C447.662 386.417 445.084 376.683 439.395 368.715L425.364 349.018L449.581 350.929C459.384 351.715 469.129 348.961 477.034 343.166C484.026 338.04 489.265 330.672 491.785 322.419C494.303 314.169 494.067 305.159 491.119 297.051C487.782 287.876 481.211 280.216 472.608 275.476L451.316 263.748L474.03 255.025C483.182 251.51 490.741 244.833 495.318 236.223Z" fill="#FF5757"></path>
+                </svg>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
